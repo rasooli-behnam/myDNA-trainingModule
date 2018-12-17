@@ -5,7 +5,10 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 
+import WhyDNATest from "../Why";
 import WhoShouldGet from "../Who";
+import HowToTest from "../DoTest";
+import HowToReadTest from "../ReadTest";
 import MoreTips from "../Tips";
 
 function TabContainer(props) {
@@ -50,10 +53,10 @@ class App extends React.Component {
             <Tab label="More Tips" />
           </Tabs>
         </AppBar>
-        {value === 0 && <TabContainer>Why DNA Test</TabContainer>}
+        {value === 0 && <WhyDNATest />}
         {value === 1 && <WhoShouldGet />}
-        {value === 2 && <TabContainer>How To Test</TabContainer>}
-        {value === 3 && <TabContainer>How To Use</TabContainer>}
+        {value === 2 && <HowToTest />}
+        {value === 3 && <HowToReadTest />}
         {value === 4 && <MoreTips />}
       </div>
     );

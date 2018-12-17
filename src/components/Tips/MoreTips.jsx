@@ -42,7 +42,14 @@ function MoreTips(props) {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <IdentifyingCustomers />
+          <div>
+            <Typography>
+              Identify patient and discuss the test with them. A potential
+              customer can be one of the following:
+            </Typography>
+            <br />
+            <IdentifyingCustomers />
+          </div>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel className={classes.panel}>

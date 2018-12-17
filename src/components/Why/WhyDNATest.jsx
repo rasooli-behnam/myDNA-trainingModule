@@ -25,18 +25,18 @@ function WhyDNATest(props) {
     <div className={classes.root}>
       <ExpansionPanel className={classes.panel}>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>...</Typography>
+          <Typography className={classes.heading}>text</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>...</div>
+          <div>text</div>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel className={classes.panel}>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>...</Typography>
+          <Typography className={classes.heading}>text</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>...</div>
+          <div>text</div>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>

@@ -6,6 +6,8 @@ import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
+import TestProcdure from "./TestProcedure";
+
 const styles = theme => ({
   root: {
     width: "100%"
@@ -25,18 +27,23 @@ function HowToTest(props) {
     <div className={classes.root}>
       <ExpansionPanel className={classes.panel}>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>...</Typography>
+          <Typography className={classes.heading}>Procedure</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>...</div>
+          <TestProcdure />
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel className={classes.panel}>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>...</Typography>
+          <Typography className={classes.heading}>Time Frame</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>...</div>
+          <Typography>
+            Results will be available within 10-15 business days from when the
+            lab receives the sample.
+            <br />
+            The patient will be notified by email when the results are ready.
+          </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
