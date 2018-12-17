@@ -6,6 +6,7 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 
 import WhoShouldGet from "../Who";
+import MoreTips from "../Tips";
 
 function TabContainer(props) {
   return (
@@ -53,7 +54,7 @@ class App extends React.Component {
         {value === 1 && <WhoShouldGet />}
         {value === 2 && <TabContainer>How To Test</TabContainer>}
         {value === 3 && <TabContainer>How To Use</TabContainer>}
-        {value === 4 && <TabContainer>More Tips</TabContainer>}
+        {value === 4 && <MoreTips />}
       </div>
     );
   }
