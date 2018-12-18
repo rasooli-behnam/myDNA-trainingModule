@@ -6,6 +6,8 @@ import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
+import Benefits from "./Benefits";
+
 const styles = theme => ({
   root: {
     width: "100%"
@@ -25,18 +27,26 @@ function WhyDNATest(props) {
     <div className={classes.root}>
       <ExpansionPanel className={classes.panel}>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>text</Typography>
+          <Typography className={classes.heading}>Benefits</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>text</div>
+          <Benefits />
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel className={classes.panel}>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>text</Typography>
+          <Typography className={classes.heading}>Usability</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>text</div>
+          <div>Usability</div>
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
+      <ExpansionPanel className={classes.panel}>
+        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography className={classes.heading}>Costs</Typography>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
+          <div>Costs</div>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
