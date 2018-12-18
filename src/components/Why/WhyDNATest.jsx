@@ -8,6 +8,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import Benefits from "./Benefits";
 import Usability from "./Usability";
+import Costs from "./Costs";
 
 const styles = theme => ({
   root: {
@@ -47,7 +48,7 @@ function WhyDNATest(props) {
           <Typography className={classes.heading}>Costs</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>Costs</div>
+          <Costs />
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
