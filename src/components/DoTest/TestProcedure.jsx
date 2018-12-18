@@ -4,7 +4,13 @@ import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Typography from "@material-ui/core/Typography";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import {
+  ExpandMore,
+  Colorize,
+  HowToReg,
+  Mail,
+  Assignment
+} from "@material-ui/icons";
 
 const styles = theme => ({
   root: {
@@ -21,32 +27,40 @@ function SimpleExpansionPanel(props) {
   return (
     <div className={classes.root}>
       <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>Swab</Typography>
+        <ExpansionPanelSummary expandIcon={<ExpandMore />}>
+          <Colorize />
+          <Typography className={classes.heading}>&nbsp; Swab</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography />
+          <Typography>Swab the inside of their cheek</Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>Register</Typography>
+        <ExpansionPanelSummary expandIcon={<ExpandMore />}>
+          <HowToReg />
+          <Typography className={classes.heading}>&nbsp; Register</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography />
+          <Typography>
+            Register the kit online with the unique barcode
+          </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>Send</Typography>
+        <ExpansionPanelSummary expandIcon={<ExpandMore />}>
+          <Mail />
+          <Typography className={classes.heading}>&nbsp; Send</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography />
+          <Typography>
+            Send the kit using the provided reply paid envelope
+          </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>Result</Typography>
+        <ExpansionPanelSummary expandIcon={<ExpandMore />}>
+          <Assignment />
+          <Typography className={classes.heading}>&nbsp; Result</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
