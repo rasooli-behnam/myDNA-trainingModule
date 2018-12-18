@@ -7,6 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import Benefits from "./Benefits";
+import Usability from "./Usability";
 
 const styles = theme => ({
   root: {
@@ -38,7 +39,7 @@ function WhyDNATest(props) {
           <Typography className={classes.heading}>Usability</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>Usability</div>
+          <Usability />
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel className={classes.panel}>
