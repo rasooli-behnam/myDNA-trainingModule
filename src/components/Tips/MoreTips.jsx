@@ -7,6 +7,8 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import IdentifyingCustomers from "./IdentifyingCustomers";
+import InDepthMaterials from "./InDepthMaterials";
+import FAQs from "./FAQs";
 
 const styles = theme => ({
   root: {
@@ -32,7 +34,7 @@ function MoreTips(props) {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>content goes here...</div>
+          <div>to be added...</div>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel className={classes.panel}>
@@ -59,7 +61,15 @@ function MoreTips(props) {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>content goes here...</div>
+          <InDepthMaterials />
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
+      <ExpansionPanel className={classes.panel}>
+        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography className={classes.heading}>FAQs</Typography>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
+          <FAQs />
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
