@@ -7,6 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import PotentialCustomers from "./PotentialCustomers";
+import Introducing from "./Introducing";
 
 const styles = theme => ({
   root: {
@@ -42,7 +43,7 @@ function WhoShouldGet(props) {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>Introducing To Customers</div>
+          <Introducing />
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>

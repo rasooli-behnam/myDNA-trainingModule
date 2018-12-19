@@ -3,6 +3,11 @@ import { withStyles } from "@material-ui/core/styles";
 import { Paper, Typography } from "@material-ui/core";
 
 const styles = theme => ({
+  title: {
+    fontSize: 16,
+    fontWeight: "bold",
+    marginBottom: 16
+  },
   box: {
     padding: "40px 20px",
     margin: "18px 0"
@@ -14,7 +19,7 @@ function FAQs(props) {
   return (
     <div>
       <Paper className={classes.box}>
-        <Typography variant="subtitle2">
+        <Typography className={classes.title}>
           If I have a medical condition, food intolerance or allergy will this
           test be helpful?
         </Typography>
@@ -29,7 +34,7 @@ function FAQs(props) {
         </Typography>
       </Paper>
       <Paper className={classes.box}>
-        <Typography variant="subtitle2">Is it accurate?</Typography>
+        <Typography className={classes.title}>Is it accurate?</Typography>
         <Typography>
           A strict quality assurance process combined with state of the art
           laboratory facilities, allows us to control reliability and validity
@@ -39,7 +44,7 @@ function FAQs(props) {
         </Typography>
       </Paper>
       <Paper className={classes.box}>
-        <Typography variant="subtitle2">
+        <Typography className={classes.title}>
           Do the results have any implications for my life insurance?
         </Typography>
         <Typography>
@@ -49,7 +54,9 @@ function FAQs(props) {
         </Typography>
       </Paper>
       <Paper className={classes.box}>
-        <Typography variant="subtitle2">Can children be tested?</Typography>
+        <Typography className={classes.title}>
+          Can children be tested?
+        </Typography>
         <Typography>
           The current myDNA personalised diet report has genetic results and
           recommendations tailored for individuals over 18 years of age
