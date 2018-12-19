@@ -1,9 +1,12 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
-import ExpansionPanel from "@material-ui/core/ExpansionPanel";
-import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
-import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
-import Typography from "@material-ui/core/Typography";
+import {
+  Divider,
+  ExpansionPanel,
+  ExpansionPanelSummary,
+  ExpansionPanelDetails,
+  Typography
+} from "@material-ui/core";
 import {
   ExpandMore,
   Colorize,
@@ -19,6 +22,9 @@ const styles = theme => ({
   heading: {
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular
+  },
+  panelDetails: {
+    display: "block"
   }
 });
 
@@ -31,8 +37,10 @@ function SimpleExpansionPanel(props) {
           <Colorize />
           <Typography className={classes.heading}>&nbsp; Swab</Typography>
         </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <Typography>Swab the inside of their cheek</Typography>
+        <ExpansionPanelDetails className={classes.panelDetails}>
+          <Typography>Swab the inside of their chee</Typography>
+          <br />
+          <img src="https://fakeimg.pl/400x250/282828/eae0d0/?text=Swab%20Image" />
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel>
@@ -40,10 +48,12 @@ function SimpleExpansionPanel(props) {
           <HowToReg />
           <Typography className={classes.heading}>&nbsp; Register</Typography>
         </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
+        <ExpansionPanelDetails className={classes.panelDetails}>
           <Typography>
             Register the kit online with the unique barcode
           </Typography>
+          <br />
+          <img src="https://fakeimg.pl/400x250/282828/eae0d0/?text=Register%20Image" />
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel>
@@ -51,10 +61,12 @@ function SimpleExpansionPanel(props) {
           <Mail />
           <Typography className={classes.heading}>&nbsp; Send</Typography>
         </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
+        <ExpansionPanelDetails className={classes.panelDetails}>
           <Typography>
             Send the kit using the provided reply paid envelope
           </Typography>
+          <br />
+          <img src="https://fakeimg.pl/400x250/282828/eae0d0/?text=Send%20Image" />
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel>

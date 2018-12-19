@@ -37,10 +37,12 @@ function WhoShouldGet(props) {
       </ExpansionPanel>
       <ExpansionPanel className={classes.panel}>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>Introduction</Typography>
+          <Typography className={classes.heading}>
+            Introducing To Customers
+          </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>Introduction</div>
+          <div>Introducing To Customers</div>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
