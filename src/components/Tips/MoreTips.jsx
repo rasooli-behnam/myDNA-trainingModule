@@ -6,6 +6,7 @@ import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
+import EngagingDoctors from "./EngagingDoctors";
 import IdentifyingCustomers from "./IdentifyingCustomers";
 import InDepthMaterials from "./InDepthMaterials";
 import FAQs from "./FAQs";
@@ -34,7 +35,7 @@ function MoreTips(props) {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <div>to be added...</div>
+          <EngagingDoctors />
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel className={classes.panel}>

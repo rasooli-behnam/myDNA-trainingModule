@@ -1,96 +1,46 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
-import {
-  Divider,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
-  Typography
-} from "@material-ui/core";
-import {
-  ExpandMore,
-  Colorize,
-  HowToReg,
-  Mail,
-  Assignment
-} from "@material-ui/icons";
+import { Paper, Typography } from "@material-ui/core";
+import HowTo_1 from "/src/Media/HowTo_1.PNG";
+import HowTo_2 from "/src/Media/HowTo_2.PNG";
 
 const styles = theme => ({
   root: {
     width: "100%"
   },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular
+  images: {
+    margin: "auto"
   },
-  panelDetails: {
-    display: "block"
+  typography: {
+    padding: 20
   }
 });
 
 function SimpleExpansionPanel(props) {
   const { classes } = props;
   return (
-    <div className={classes.root}>
-      <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMore />}>
-          <Colorize />
-          <Typography className={classes.heading}>&nbsp; Swab</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails className={classes.panelDetails}>
-          <Typography>Swab the inside of their chee</Typography>
-          <br />
-          <img src="https://fakeimg.pl/400x250/282828/eae0d0/?text=Swab%20Image" />
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
-      <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMore />}>
-          <HowToReg />
-          <Typography className={classes.heading}>&nbsp; Register</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails className={classes.panelDetails}>
-          <Typography>
-            Register the kit online with the unique barcode
-          </Typography>
-          <br />
-          <img src="https://fakeimg.pl/400x250/282828/eae0d0/?text=Register%20Image" />
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
-      <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMore />}>
-          <Mail />
-          <Typography className={classes.heading}>&nbsp; Send</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails className={classes.panelDetails}>
-          <Typography>
-            Send the kit using the provided reply paid envelope
-          </Typography>
-          <br />
-          <img src="https://fakeimg.pl/400x250/282828/eae0d0/?text=Send%20Image" />
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
-      <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMore />}>
-          <Assignment />
-          <Typography className={classes.heading}>&nbsp; Result</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <Typography>
-            If result delivery preference is direct to patient, they will have a
-            phone consultation with the myDNA genetic counselling service and
-            following this will be able to access their report on their private
-            myDNA Explore portal.
-            <br />
-            <br />
-            If result delivery preference is the health care professional, you
-            will receive an email notification and results can be accessed on
-            your secure myDNA portal via "Patient Search". Once the result has
-            been discussed with the patient click the "delivered Result" button,
-            to enable the patient to view it on their personal explore portal.
-          </Typography>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
-    </div>
+    <Paper className={classes.root}>
+      <div className={classes.images}>
+        <img src={HowTo_1} alt="" />
+        <img src={HowTo_2} alt="" />
+      </div>
+      <Typography className={classes.typography} variant="h6">
+        Result:
+      </Typography>
+      <Typography className={classes.typography}>
+        If result delivery preference is direct to patient, they will have a
+        phone consultation with the myDNA genetic counselling service and
+        following this will be able to access their report on their private
+        myDNA Explore portal.
+        <br />
+        <br />
+        If result delivery preference is the health care professional, you will
+        receive an email notification and results can be accessed on your secure
+        myDNA portal via "Patient Search". Once the result has been discussed
+        with the patient click the "delivered Result" button, to enable the
+        patient to view it on their personal explore portal.
+      </Typography>
+    </Paper>
   );
 }
 
